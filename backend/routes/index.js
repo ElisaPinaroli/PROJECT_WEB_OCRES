@@ -5,9 +5,27 @@ var router = express.Router();
 require('./models/dbConfig');
 const postsRoutes = require('./routes/postsController');
 const bodyParser = require('body-parser');
-//const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 //mongoose.set('useFindAndModify', false);
 const cors = require('cors'); //rend api accessible depuis n'importe ou
+const app = require("../app");
+const ActivitesModel = require("./models/activite")
+
+app.use(express.json());
+mongoose.connect("mongodb+srv://elisapinaroli:Elisa0510@crud.mxkskvu.mongodb.net/?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+});
+
+app.get('/', async (req, res) => {
+  const AActivite = new ActivitesModel({actnom : "tour eiffel", description : "monter sur la tour"});
+  try{
+    await AActivite.save();
+    res.send("c'est bon");
+  }catch(err){
+    console.log(err);
+  }
+
+});
 
 
 app.use(bodyParser.json());
@@ -18,16 +36,17 @@ app.use(cors({origin: 'http://localhost:3000'})); //autorise access a l'api a lo
 app.use('/posts', postsRoutes);
 
 //connecter au serveur
-app.listen(5500, () => console.log('server started : 5500'));
+app.listen(3001, () => console.log('server started : 3001'));
 
 
 
 
 /* GET home page. */
+/*
 router.get("/", function(req, res, next) {
   res.send("This is my homepage");
 });
-
+*/
 module.exports = router;
 
 

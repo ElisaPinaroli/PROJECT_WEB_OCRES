@@ -1,21 +1,19 @@
 const express = require('express');
+const axios = require('axios');
+// Lodash utils library
+const _ = require('lodash');
+
 const router = express.Router();
-const ObjectID = require('mongoose').Types.ObjectId;
 
-const {PostsModel} = require('../models/postsModel');
+const activiteController = require('../controllers/activite');
 
-router.get('/', (req, res) => {
-    PostsModel.find((err, docs) => {
-        if (!err) res.send(docs);
-        else console.log("error to get data : " + err);
-        //console.log(docs);
-    })
-});
+const activites = [];
 
+router.post('/:id', activiteController.post)
 //creer
 router.post('/', (req, res) => {
     console.log(req.body);
-    const newRecord = new PostsModel({
+    const newRecord = new activite({
         author : req.body.author,
         message: req.body.message
     });
@@ -36,7 +34,7 @@ router.put("/:id", (req, res) => {
         message: req.body.message
     };
     
-    PostsModel.findByIdAndUpdate(
+    activite.findByIdAndUpdate(
         req.params.id,
         {$set : updateRecord},
         {new: true},
@@ -52,7 +50,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
     if(!ObjectID.isValid(req.params.id))
         return res.status(400).send("ID unknown : " + req.params.id)
-    PostsModel.findByIdAndRemove(
+        activite.findByIdAndRemove(
         req.params.id,
         (err, docs) => {
           if(!err) res.send(docs);  
@@ -60,5 +58,6 @@ router.delete("/:id", (req, res) => {
         }
         );
 });  
+
 
 module.exports = router;
