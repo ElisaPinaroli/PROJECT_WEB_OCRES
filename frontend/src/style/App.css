@@ -1,0 +1,134 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category {
+  display: flex;
+}
+
+.Window {
+  display :flex;
+  overflow-x: auto;
+  /*position: absolute;*/
+  right : 5;
+  left : 5;
+  height : auto;
+  width : 100%;
+}
+
+.ContenuMenu {
+  display :flex;
+  flex-direction: row;
+  /*position: absolute;*/
+  padding-left : 10px;
+  
+  padding-top : 5px;
+  
+
+  height : auto;
+}
+
+.Contenu {
+  display :flex;
+  flex-direction: column;
+  max-width: 410px;
+  width : 100%;
+/*
+  position: absolute;*/
+  /*padding-left : 220px;
+  padding-right : 500px;
+  padding-top : 5px;*/
+  
+
+  height : auto;
+}
+
+.Contenu2 {
+  display :flex;
+  flex-direction: column;
+  max-width: 600px;
+  width : 100%;
+  /*position: absolute;
+  padding-left :665px;
+  padding-right : 10px;
+  padding-top : 5px;
+
+*/
+  height : auto;
+
+
+ /*
+  width : 600px;
+  position: absolute;
+  /*padding-left :665px;
+  padding-right : 10px;
+  padding-top : 5px;
+
+
+  height : auto;*/
+}
+
+.Contenu3 {
+  display :flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+  /*position: absolute;
+  
+  padding-right : 10px;*/
+  
+
+  height : auto;
+}
+
+.Contenu4 {
+
+  display :flex;
+  flex-direction: row;
+  max-width: 600px;
+  width : 100%;
+  /*
+  position: absolute;
+  
+  padding-right : 10px;
+  padding-left : 475px;*/
+
+  height : auto;
+}
+
+.paddingtop {
+  
+  padding-top : 15px;
+
+  
+}
+
+
+.paddingleft {
+  
+  padding-left: 50px;
+  
+}
+
+
+/*
+.menu {
+  position: absolute;
+  
+  width: 200px;
+  height: auto;
+  /*left: 10px;
+  right: 10px;
+  top: 11px;
+
+  background: #8da6b2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
+  border-radius: 20px;
+
+ 
+  
+}
+*/

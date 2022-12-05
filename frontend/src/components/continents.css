@@ -1,0 +1,21 @@
+.continent{
+    
+    display: flex;
+   
+   height : 180px;
+   width : 360px;
+  /*
+   width: 90%;
+   height : 100%;*/
+   
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 30px;
+   padding-bottom: 10px;
+
+   /*background: #b8ced9;*/
+   background: #9bb0ba;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+}
+

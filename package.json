@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "axios": "^1.2.0",
-    "body-parser": "^1.20.1",
-    "cors": "^2.8.5"
-  }
-}

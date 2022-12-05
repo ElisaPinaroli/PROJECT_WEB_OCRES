@@ -1,0 +1,77 @@
+.edit {
+    display: flex;
+    width: 410px;
+    height: 210px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 28px;
+}
+
+.edit_infoLine {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.edit_infoLabel {
+    margin-right: 10px;
+    font-weight: 700;
+    /*position: absolute;*/
+}
+
+.edit_infos {
+    /*width: 100%;
+    margin-bottom: 5px;*/
+    /* position: absolute;*/
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.edit_info {
+    /* position: absolute;
+    width: 225px;
+    height: 76px;
+    left: 148px;
+    top: 458px;*/
+    text-align: start;
+    /*font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;*/
+    /* or 100% */
+    /*color: #000000;*/
+}
+
+img {
+    /*width: 150px;*/
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* position: absolute;*/
+    display: flex;
+}
+
+.grid {
+    flex-direction: column;
+}
+
+.infoEdit {
+    background: #8cafc2;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.edit_element {
+    padding-left: 5px;
+    padding-right: 5px;
+}

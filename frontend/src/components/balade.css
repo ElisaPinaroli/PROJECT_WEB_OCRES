@@ -1,0 +1,84 @@
+.balade {
+    display: flex;
+   
+   /*max-width: 360px;*/
+   height : 180px;
+
+   width: 90%;
+   /*height : 100%;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+ 
+    /*background: #b8ced9;*/
+    background: #9bb0ba;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+    .infoLine {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    
+
+
+.infoLabel {
+    margin-right: 10px;
+    font-weight: 700;
+    /*position: absolute;*/
+
+}
+
+.infos {
+    /*width: 100%;
+    margin-bottom: 5px;*/
+
+   /* position: absolute;*/
+   width: 100%;
+   margin-bottom: 5px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+}
+
+.info {
+    
+    
+        /* position: absolute;
+    width: 225px;
+    height: 76px;
+    left: 148px;
+    top: 458px;*/
+        text-align: start;
+        /*font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;*/
+        /* or 100% */
+        /*color: #000000;*/
+    }
+    
+    img {
+        /*width: 150px;*/
+        margin-bottom: 10px;
+        border-radius: 5px;
+        /* position: absolute;*/
+        display: flex;
+   
+    }
+    
+    .grid {
+        flex-direction: column;
+    }
+    
+    .infoEdit {
+        width: 50%;
+        margin-bottom: 5px;
+    }
